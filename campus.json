@@ -1,186 +1,223 @@
 [
   {
     "key" : "RET",
+    "name" : "Reitoria",
     "latitude" : -23.5252986,
-     "longitude" : -46.621803
+    "longitude" : -46.621803
   },
   {
     "key" : "ARQ",
+    "name" : "Araraquara",
     "latitude" : -21.7839127,
     "longitude" : -48.2109611
   },
   {
     "key" : "AVR",
+    "name" : "Avare",
     "latitude" : -23.078456,
     "longitude" : -48.926257
   },
   {
     "key" : "BAR",
+    "name" : "Barretos",
     "latitude" : -20.540775,
     "longitude" : -48.5494308
   },
   {
     "key" : "BRI",
+    "name" : "Birigui",
     "latitude" : -21.2495178,
     "longitude" : -50.313554
   },
   {
     "key" : "BTV",
+    "name" : "Boituva",
     "latitude" : -23.288399,
     "longitude" : -47.652209
   },
   {
     "key" : "BRA",
+    "name" : "Braganca Paulista",
     "latitude" : -22.9460577,
     "longitude" : -46.5262442
   },
   {
     "key" : "CMP",
+    "name" : "Campinas",
     "latitude" : -22.8514283,
     "longitude" : -47.1272867
   },
   {
     "key" : "CJO",
+    "name" : "Campos do Jordao",
     "latitude" : -22.7428497,
     "longitude" : -45.5924143
   },
   {
     "key" : "CPV",
+    "name" : "Capivari",
     "latitude" : -22.976792,
     "longitude" : -47.4734869
   },
   {
     "key" : "CAR",
+    "name" : "Caraguatatuba",
     "latitude" : -23.6366424,
     "longitude" : -45.4259219
   },
   {
     "key" : "CTD",
+    "name" : "Catanduva",
     "latitude" : -21.146656,
     "longitude" : -48.9470352
   },
   {
     "key" : "CBT",
+    "name" : "Cubatao",
     "latitude" : -23.9283258,
     "longitude" : -46.4121068
   },
   {
     "key" : "GRU",
+    "name" : "Guarulhos",
     "latitude" : -23.4392016,
     "longitude" : -46.5374154
   },
   {
     "key" : "HTO",
+    "name" : "Hortolandia",
     "latitude" : -22.8510919,
     "longitude" : -47.2312368
   },
   {
     "key" : "IST",
+    "name" : "Ilha Solteira",
     "latitude" : -20.4209035,
     "longitude" : -51.3332517
   },
   {
     "key" : "ITP",
+    "name" : "Itapetininga",
     "latitude" : -23.5938174,
     "longitude" : -48.0185491
   },
   {
     "key" : "ITQ",
+    "name" : "Itaquaquecetuba",
     "latitude" : -23.4850682,
     "longitude" : -46.3432459
   },
   {
     "key" : "JCR",
+    "name" : "Jacarei",
     "latitude" : -23.3172969,
     "longitude" : -45.9845702
   },
   {
     "key" : "JND",
+    "name" : "Jundiai",
     "latitude" : -23.1929916,
     "longitude" : -46.8776027
   },
   {
     "key" : "MTO",
+    "name" : "Matao",
     "latitude" : -21.624281,
     "longitude" : -48.3480814
   },
   {
     "key" : "PRC",
+    "name" : "Piracicaba",
     "latitude" : -22.6935064,
     "longitude" : -47.62585
   },
   {
     "key" : "PTB",
+    "name" : "Pirituba",
     "latitude" : -23.4874646,
     "longitude" : -46.7358291
   },
   {
     "key" : "PEP",
+    "name" : "Presidenti Epitacio",
     "latitude" : -21.7854274,
     "longitude" : -52.1114539
   },
   {
     "key" : "REG",
+    "name" : "Registro",
     "latitude" : -24.5331916,
     "longitude" : -47.8691479
   },
   {
     "key" : "SLT",
+    "name" : "Salto",
     "latitude" : -23.1964349,
     "longitude" : -47.3021027
   },
   {
     "key" : "SCL",
+    "name" : "Sao Carlos",
     "latitude" : -21.9694546,
     "longitude" : -47.8781712
   },
   {
     "key" : "SBV",
+    "name" : "Sao Joao da Boa Vista",
     "latitude" : -21.967168,
     "longitude" : -46.812737
   },
   {
     "key" : "SJC",
+    "name" : "Sao Jose dos Campos",
     "latitude" : -23.1898404,
     "longitude" : -45.8498566
   },
   {
     "key" : "SMP",
+    "name" : "Sao Miguel Paulista",
     "latitude" : -23.4987794,
     "longitude" : -46.4390699
   },
   {
     "key" : "SPO",
+    "name" : "Sao Paulo",
     "latitude" : -23.5252986,
     "longitude" : -46.621803
   },
   {
     "key" : "SRQ",
+    "name" : "Sao Roque",
     "latitude" : -23.555122,
     "longitude" : -47.149617
   },
   {
     "key" : "SOR",
+    "name" : "Sorocaba",
     "latitude" : -23.488514,
     "longitude" : -47.444493
   },
   {
     "key" : "STZ",
+    "name" : "Sertaozinho",
     "latitude" : -21.1432954,
     "longitude" : -47.9729819
   },
   {
     "key" : "SUZ",
+    "name" : "Suzano",
     "latitude" : -23.5356099,
     "longitude" : -46.3268156
   },
   {
     "key" : "TUP",
+    "name" : "Tupa",
     "latitude" : -21.9233807,
     "longitude" : -50.521895
   },
   {
     "key" : "VTP",
+    "name" : "Votuporanga",
     "latitude" : -20.4040907,
     "longitude" : -49.9684089
   }
