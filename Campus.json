@@ -1,150 +1,150 @@
 [
 {
-	"key":"RET,
+	"key":"RET",
 	"latitude":-23.5252986,
 	"longitude":-46.621803},
 {
-	"key":"ARQ,
+	"key":"ARQ",
 	"latitude":-21.7839127,
 	"longitude":-48.2109611},
 {
-	"key":"AVR,
+	"key":"AVR",
 	"latitude":-23.078456,
 	"longitude":-48.926257},
 {
-	"key":"BAR,
+	"key":"BAR",
 	"latitude":-20.540775,
 	"longitude":-48.5494308},
 {
-	"key":"BRI,
+	"key":"BRI",
 	"latitude":-21.2495178,
 	"longitude":-50.313554},
 {
-	"key":"BTV,
+	"key":"BTV",
 	"latitude":-23.288399,
 	"longitude":-47.652209},
 {
-	"key":"BRA,
+	"key":"BRA",
 	"latitude":-22.9460577,
 	"longitude":-46.5262442},
 {
-	"key":"CMP,
+	"key":"CMP",
 	"latitude":-22.8514283,
 	"longitude":-47.1272867},
 {
-	"key":"CJO,
+	"key":"CJO",
 	"latitude":-22.7428497,
 	"longitude":-45.5924143},
 {
-	"key":"CPV,
+	"key":"CPV",
 	"latitude":-22.976792,
 	"longitude":-47.4734869},
 {
-	"key":"CAR,
+	"key":"CAR",
 	"latitude":-23.6366424,
 	"longitude":-45.4259219},
 {
-	"key":"CTD,
+	"key":"CTD",
 	"latitude":-21.146656,
 	"longitude":-48.9470352},
 {
-	"key":"CBT,
+	"key":"CBT",
 	"latitude":-23.9283258,
 	"longitude":-46.4121068},
 {
-	"key":"GRU,
+	"key":"GRU",
 	"latitude":-23.4392016,
 	"longitude":-46.5374154},
 {
-	"key":"HTO,
+	"key":"HTO",
 	"latitude":-22.8510919,
 	"longitude":-47.2312368},
 {
-	"key":"IST,
+	"key":"IST",
 	"latitude":-20.4209035,
 	"longitude":-51.3332517},
 {
-	"key":"ITP,
+	"key":"ITP",
 	"latitude":-23.5938174,
 	"longitude":-48.0185491},
 {
-	"key":"ITQ,
+	"key":"ITQ",
 	"latitude":-23.4850682,
 	"longitude":-46.3432459},
 {
-	"key":"JCR,
+	"key":"JCR",
 	"latitude":-23.3172969,
 	"longitude":-45.9845702},
 {
-	"key":"JND,
+	"key":"JND",
 	"latitude":-23.1929916,
 	"longitude":-46.8776027},
 {
-	"key":"MTO,
+	"key":"MTO",
 	"latitude":-21.624281,
 	"longitude":-48.3480814},
 {
-	"key":"PRC,
+	"key":"PRC",
 	"latitude":-22.6935064,
 	"longitude":-47.62585},
 {
-	"key":"PTB,
+	"key":"PTB",
 	"latitude":-23.4874646,
 	"longitude":-46.7358291},
 {
-	"key":"PEP,
+	"key":"PEP",
 	"latitude":-21.7854274,
 	"longitude":-52.1114539},
 {
-	"key":"REG,
+	"key":"REG",
 	"latitude":-24.5331916,
 	"longitude":-47.8691479},
 {
-	"key":"SLT,
+	"key":"SLT",
 	"latitude":-23.1964349,
 	"longitude":-47.3021027},
 {
-	"key":"SCL,
+	"key":"SCL",
 	"latitude":-21.9694546,
 	"longitude":-47.8781712},
 {
-	"key":"SBV,
+	"key":"SBV",
 	"latitude":-21.967168,
 	"longitude":-46.812737},
 {
-	"key":"SJC,
+	"key":"SJC",
 	"latitude":-23.1898404,
 	"longitude":-45.8498566},
 {
-	"key":"SMP,
+	"key":"SMP",
 	"latitude":-23.4987794,
 	"longitude":-46.4390699},
 {
-	"key":"SPO,
+	"key":"SPO",
 	"latitude":-23.5252986,
 	"longitude":-46.621803},
 {
-	"key":"SRQ,
+	"key":"SRQ",
 	"latitude":-23.555122,
 	"longitude":-47.149617},
 {
-	"key":"SOR,
+	"key":"SOR",
 	"latitude":-23.488514,
 	"longitude":-47.444493},
 {
-	"key":"STZ,
+	"key":"STZ",
 	"latitude":-21.1432954,
 	"longitude":-47.9729819},
 {
-	"key":"SUZ,
+	"key":"SUZ",
 	"latitude":-23.5356099,
 	"longitude":-46.3268156},
 {
-	"key":"TUP,
+	"key":"TUP",
 	"latitude":-21.9233807,
 	"longitude":-50.521895},
 {
-	"key":"VTP,
+	"key":"VTP",
 	"latitude":-20.4040907,
 	"longitude":-49.9684089}
 ]
