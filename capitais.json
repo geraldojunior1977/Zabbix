@@ -1,15 +1,15 @@
 [
   {
-    "key" : "SE",
-    "name" : "Sergipe",
-    "latitude" : -10.9091,
-    "longitude" : -37.0677
+    "key" : "RET",
+    "name" : "Reitoria",
+    "latitude" : -23.5252986,
+    "longitude" : -46.621803
   },
   {
-    "key" : "PA",
-    "name" : "Pará",
-    "latitude" : -1.4554,
-    "longitude" : -48.4898
+    "key" : "ARQ",
+    "name" : "Araraquara",
+    "latitude" : -21.7839127,
+    "longitude" : -48.2109611
   },
   {
     "key" : "MG",
