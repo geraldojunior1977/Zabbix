@@ -1,0 +1,121 @@
+# MIB: Unity-MIB (file:/usr/share/snmp/mibs/ietf/Unity-MIB.mib) converted on Fri Dec  4 08:38:25 2020 using snmpttconvertmib v1.4
+#
+#
+#
+EVENT unityGenericTrapEmergency .1.3.6.1.4.1.1139.103.1.18.2.0 "Generic Trap Emergency" EMERGENCY
+#Normal
+FORMAT ZBXTRAP $ar $N $s This trap is generated when the system is unusable. $*
+SDESC
+This trap is generated when the system is unusable.
+Variables:
+  1: unityTrapNode
+  2: unityTrapComponent
+  3: unityTrapSymptomID
+  4: unityTrapSymptomText
+  5: unityTrapTimeStamp
+EDESC
+#
+#
+#
+EVENT unityGenericTrapAlert .1.3.6.1.4.1.1139.103.1.18.2.1 "Generic Trap Alert" ALERT
+#Normal
+FORMAT ZBXTRAP $ar $N $s This trap is generated when action needs to be taken immediately. $*
+SDESC
+This trap is generated when action needs to be taken immediately.
+Variables:
+  1: unityTrapNode
+  2: unityTrapComponent
+  3: unityTrapSymptomID
+  4: unityTrapSymptomText
+  5: unityTrapTimeStamp
+EDESC
+#
+#
+#
+EVENT unityGenericTrapCritical .1.3.6.1.4.1.1139.103.1.18.2.2 "Generic Trap Critical" CRITICAL
+#Normal
+FORMAT ZBXTRAP $ar $N $s This trap is generated when the system is in critical condition. $*
+SDESC
+This trap is generated when the system is in critical condition.
+Variables:
+  1: unityTrapNode
+  2: unityTrapComponent
+  3: unityTrapSymptomID
+  4: unityTrapSymptomText
+  5: unityTrapTimeStamp
+EDESC
+#
+#
+#
+EVENT unityGenericTrapError .1.3.6.1.4.1.1139.103.1.18.2.3 "Generic Trap Error" ERROR
+#Normal
+FORMAT ZBXTRAP $ar $N $s This trap is generated when there is an error in the system. $*
+SDESC
+This trap is generated when there is an error in the system.
+Variables:
+  1: unityTrapNode
+  2: unityTrapComponent
+  3: unityTrapSymptomID
+  4: unityTrapSymptomText
+  5: unityTrapTimeStamp
+EDESC
+#
+#
+#
+EVENT unityGenericTrapWarning .1.3.6.1.4.1.1139.103.1.18.2.4 "Generic Trap Warning" WARNING
+#Normal
+FORMAT ZBXTRAP $ar $N $s This trap is generated when there is a warning condition in the system. $*
+SDESC
+This trap is generated when there is a warning condition in the system.
+Variables:
+  1: unityTrapNode
+  2: unityTrapComponent
+  3: unityTrapSymptomID
+  4: unityTrapSymptomText
+  5: unityTrapTimeStamp
+EDESC
+#
+#
+#
+EVENT unityGenericTrapNotice .1.3.6.1.4.1.1139.103.1.18.2.5 "Generic Trap Notice" SIGNIFICANT
+#"Status Events"
+#Normal
+FORMAT ZBXTRAP $ar $N $s This trap is generated when there is a normal but significant condition in the system. $*
+SDESC
+This trap is generated when there is a normal but significant condition in the system.
+Variables:
+  1: unityTrapNode
+  2: unityTrapComponent
+  3: unityTrapSymptomID
+  4: unityTrapSymptomText
+EDESC
+#
+#
+#
+EVENT unityGenericTrapInformational .1.3.6.1.4.1.1139.103.1.18.2.6 "Generic Trap Informational" INFO
+#Normal
+FORMAT ZBXTRAP $ar $N $s This trap is generated when there is an informational message. $*
+SDESC
+This trap is generated when there is an informational message.
+Variables:
+  1: unityTrapNode
+  2: unityTrapComponent
+  3: unityTrapSymptomID
+  4: unityTrapSymptomText
+  5: unityTrapTimeStamp
+EDESC
+#
+#
+#
+EVENT unityGenericTrapDebug .1.3.6.1.4.1.1139.103.1.18.2.7 "Generic Trap Debug" DEBUG
+#Normal
+FORMAT ZBXTRAP $ar $N $s This trap is generated when there is a debug-level message. $*
+SDESC
+This trap is generated when there is a debug-level message.
+Variables:
+  1: unityTrapNode
+  2: unityTrapComponent
+  3: unityTrapSymptomID
+  4: unityTrapSymptomText
+  5: unityTrapTimeStamp
+EDESC
