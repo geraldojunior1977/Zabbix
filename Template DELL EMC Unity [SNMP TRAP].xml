@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2023-07-28T10:44:23Z</date>
+    <groups>
+        <group>
+            <name>Appliances</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>DELL EMC Unity</template>
+            <name>DELL EMC Unity [SNMP TRAP]</name>
+            <description>Template criada para recebimento de TRAPS SNMP do UNITY 400</description>
+            <groups>
+                <group>
+                    <name>Appliances</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>TRAP SNMP</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>FALLBACK</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap.fallback</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Recebe todos os traps SNMP que não foram recebidos por nenhum item de snmptrap[].</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                </item>
+                <item>
+                    <name>Emergência</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap[unityGenericTrapAlert]</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Alarme gerada quando uma ação precisa ser executada imediatamente.</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                    <triggers>
+                        <trigger>
+                            <expression>{str(ALERT)}=1</expression>
+                            <name>ALERTA em {HOST.HOST}</name>
+                            <priority>WARNING</priority>
+                            <manual_close>YES</manual_close>
+                            <tags>
+                                <tag>
+                                    <tag>SNMP TRAP</tag>
+                                </tag>
+                            </tags>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>Crítico</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap[unityGenericTrapCritical]</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Alarme gerado quando o sistema está em condições críticas.</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                    <triggers>
+                        <trigger>
+                            <expression>{str(CRITICAL)}=1</expression>
+                            <name>CRITICO em {HOST.HOST}</name>
+                            <priority>HIGH</priority>
+                            <manual_close>YES</manual_close>
+                            <tags>
+                                <tag>
+                                    <tag>SNMP TRAP</tag>
+                                </tag>
+                            </tags>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>DEBUG</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap[unityGenericTrapDebug]</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Alarme gerado quando há uma mensagem de nível de depuração.</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                    <triggers>
+                        <trigger>
+                            <expression>{str(DEBUG)}=1</expression>
+                            <name>DEBUG em {HOST.HOST}</name>
+                            <priority>INFO</priority>
+                            <manual_close>YES</manual_close>
+                            <tags>
+                                <tag>
+                                    <tag>SNMP TRAP</tag>
+                                </tag>
+                            </tags>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>Sistema Indisponível</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap[unityGenericTrapEmergency]</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Alarme gerado quando o sistema está indisponível</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                    <triggers>
+                        <trigger>
+                            <expression>{str(EMERGENCY)}=1</expression>
+                            <name>EMERGENCIA em {HOST.HOST}</name>
+                            <priority>AVERAGE</priority>
+                            <manual_close>YES</manual_close>
+                            <tags>
+                                <tag>
+                                    <tag>SNMP TRAP</tag>
+                                </tag>
+                            </tags>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>Erro no sistema</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap[unityGenericTrapError]</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Alarme gerado quando há um erro no sistema.</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                    <triggers>
+                        <trigger>
+                            <expression>{str(ERROR)}=1</expression>
+                            <name>ERRO NO SISTEMA em {HOST.HOST}</name>
+                            <priority>WARNING</priority>
+                            <manual_close>YES</manual_close>
+                            <tags>
+                                <tag>
+                                    <tag>SNMP TRAP</tag>
+                                </tag>
+                            </tags>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>Informação</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap[unityGenericTrapInformational]</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Alarme gerado quando há uma mensagem informativa.</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                    <triggers>
+                        <trigger>
+                            <expression>{str(INFO)}=1</expression>
+                            <name>INFO em {HOST.HOST}</name>
+                            <priority>INFO</priority>
+                            <manual_close>YES</manual_close>
+                            <tags>
+                                <tag>
+                                    <tag>SNMP TRAP</tag>
+                                </tag>
+                            </tags>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>SIGNIFICANTE</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap[unityGenericTrapNotice]</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Alarme gerado quando há uma condição normal, mas significativa no sistema.</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                    <triggers>
+                        <trigger>
+                            <expression>{str(SIGNIFICANT)}=1</expression>
+                            <name>INFO significante em {HOST.HOST}</name>
+                            <priority>INFO</priority>
+                            <manual_close>YES</manual_close>
+                            <tags>
+                                <tag>
+                                    <tag>SNMT TRAP</tag>
+                                </tag>
+                            </tags>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>Condição de Alerta</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap[unityGenericTrapWarning]</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Alarme gerado quando há uma condição de aviso no sistema.</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                    <triggers>
+                        <trigger>
+                            <expression>{str(WARNING)}=1</expression>
+                            <name>CONDIÇÂO DE ALERTA em {HOST.HOST}</name>
+                            <priority>WARNING</priority>
+                            <manual_close>YES</manual_close>
+                            <tags>
+                                <tag>
+                                    <tag>SNMP TRAP</tag>
+                                </tag>
+                            </tags>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>TRAP GERAL</name>
+                    <type>SNMP_TRAP</type>
+                    <key>snmptrap[]</key>
+                    <delay>0</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <description>Alarme gerado quando há uma mensagem de nível de depuração.</description>
+                    <applications>
+                        <application>
+                            <name>TRAP SNMP</name>
+                        </application>
+                    </applications>
+                    <logtimefmt>dd-MM-yyyyphh:mm:ss</logtimefmt>
+                </item>
+            </items>
+        </template>
+    </templates>
+</zabbix_export>
