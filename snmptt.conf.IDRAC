@@ -1,0 +1,316 @@
+/etc/snmp/snmptt.conf.IDRAC
+#
+EVENT MessageID .1.3.6.1.4.1.674.10892.5.3.1.1 "alertMessageID" MessageID
+FORMAT ZBXTRAP $aA $ar MessageID
+
+EVENT Message .1.3.6.1.4.1.674.10892.5.3.1.2 "alertMessage" Message
+FORMAT ZBXTRAP $aA $ar Message
+
+EVENT CurrentStatus .1.3.6.1.4.1.674.10892.5.3.1.3 "alertCurrentStatus" CurrentStatus
+FORMAT ZBXTRAP $aA $ar CurrentStatus
+
+EVENT SystemServiceTag .1.3.6.1.4.1.674.10892.5.3.1.4 "alertSystemServiceTag" SystemServiceTag
+FORMAT ZBXTRAP $aA $ar SystemServiceTag
+
+EVENT SystemFQDN .1.3.6.1.4.1.674.10892.5.3.1.5 "alertSystemFQDN" SystemFQDN
+FORMAT ZBXTRAP $aA $ar SystemFQDN
+
+EVENT FQDD .1.3.6.1.4.1.674.10892.5.3.1.6 "alertFQDD" FQDD
+FORMAT ZBXTRAP $aA $ar FQDD
+
+EVENT DeviceDisplayName .1.3.6.1.4.1.674.10892.5.3.1.7 "alertDeviceDisplayName" DeviceDisplayName
+FORMAT ZBXTRAP $aA $ar DeviceDisplayName
+
+EVENT MessageArguments .1.3.6.1.4.1.674.10892.5.3.1.8 "alertMessageArguments" MessageArguments
+FORMAT ZBXTRAP $aA $ar MessageArguments
+
+EVENT ChassisServiceTag .1.3.6.1.4.1.674.10892.5.3.1.9 "alertChassisServiceTag" ChassisServiceTag
+FORMAT ZBXTRAP $aA $ar ChassisServiceTag
+
+EVENT ChassisName .1.3.6.1.4.1.674.10892.5.3.1.10 "alertChassisName" ChassisName
+FORMAT ZBXTRAP $aA $ar ChassisName
+
+EVENT RacFQDN .1.3.6.1.4.1.674.10892.5.3.1.11 "alertRacFQDN" RacFQDN
+FORMAT ZBXTRAP $aA $ar RacFQDN
+#######################
+EVENT alertAmperageProbeWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2178 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertAmperageProbeWarning
+
+EVENT alertAmperageProbeFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2177 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertAmperageProbeFailure
+
+EVENT alertAutomaticSystemRecovery .1.3.6.1.4.1.674.10892.5.3.2.1.0.2233 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertAutomaticSystemRecovery
+
+EVENT alertBatteryWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2226 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertBatteryWarning
+
+EVENT alertBatteryFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2225 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertBatteryFailure
+
+EVENT alertCableFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2393 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertCableFailure
+
+EVENT alertCMCWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2546 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertCMCWarning
+
+EVENT alertCMCFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2545 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertCMCFailure
+
+EVENT alertProcessorDeviceStatusWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2242 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertProcessorDeviceStatusWarning
+
+EVENT alertProcessorDeviceStatusFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2241 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertProcessorDeviceStatusFailure
+
+EVENT alertProcessorDeviceAbsent .1.3.6.1.4.1.674.10892.5.3.2.1.0.2457 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertProcessorDeviceAbsent
+
+EVENT alertFanWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2154 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertFanWarning
+
+EVENT alertFanFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2153 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertFanFailure
+
+EVENT alertFiberChannelWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2538 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertFiberChannelWarning
+
+EVENT alertFiberChannelFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2537 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertFiberChannelFailure
+
+EVENT alertHardwareConfigurationWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2330 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertHardwareConfigurationWarning
+
+EVENT alertHardwareConfigurationFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2329 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertHardwareConfigurationFailure
+
+EVENT alertIOVirtualizationFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2553 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertIOVirtualizationFailure
+
+EVENT alertLinkStatusWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2250 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertLinkStatusWarning
+
+EVENT alertLinkStatusFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2249 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertLinkStatusFailure
+
+EVENT alertMemoryDeviceWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2266 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertMemoryDeviceWarning
+
+EVENT alertMemoryDeviceFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2265 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertMemoryDeviceFailure
+
+EVENT alertNetworkWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2090 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertNetworkWarning
+
+EVENT alertNetworkFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2089 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertNetworkFailure
+
+EVENT alertOSFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2409 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertOSFailure
+
+EVENT alertPCIDeviceWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2418 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertPCIDeviceWarning
+
+EVENT alertPCIDeviceFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2417 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertPCIDeviceFailure
+
+EVENT alertPhysicalDiskWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2298 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertPhysicalDiskWarning
+
+EVENT alertPhysicalDiskFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2297 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertPhysicalDiskFailure
+
+EVENT alertBiosPostFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2425 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertBiosPostFailure
+
+EVENT alertPowerSupplyWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2186 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertPowerSupplyWarning
+
+EVENT alertPowerSupplyFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2185 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertPowerSupplyFailure
+
+EVENT alertPowerSupplyAbsent .1.3.6.1.4.1.674.10892.5.3.2.1.0.2465 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertPowerSupplyAbsent
+
+EVENT alertPowerUsageWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2274 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertPowerUsageWarning
+
+EVENT alertPowerUsageFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2273 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertPowerUsageFailure
+
+EVENT alertRedundancyDegraded .1.3.6.1.4.1.674.10892.5.3.2.1.0.2474 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertRedundancyDegraded
+
+EVENT alertRedundancyLost .1.3.6.1.4.1.674.10892.5.3.2.1.0.2473 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertRedundancyLost
+
+EVENT alertIntegratedDualSDModuleWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2210 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertIntegratedDualSDModuleWarning
+
+EVENT alertIntegratedDualSDModuleFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2209 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertIntegratedDualSDModuleFailure
+
+EVENT alertIntegratedDualSDModuleAbsent .1.3.6.1.4.1.674.10892.5.3.2.1.0.2481 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertIntegratedDualSDModuleAbsent
+
+EVENT alertIntegratedDualSDModuleRedundancyDegraded .1.3.6.1.4.1.674.10892.5.3.2.1.0.2490 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertIntegratedDualSDModuleRedundancyDegraded
+
+EVENT alertIntegratedDualSDModuleRedundancyLost .1.3.6.1.4.1.674.10892.5.3.2.1.0.2489 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertIntegratedDualSDModuleRedundancyLost
+
+EVENT alertSecurityWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2386 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertSecurityWarning
+
+EVENT alertSecurityFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2385 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertSecurityFailure
+
+EVENT alertSystemEventLogWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2378 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertSystemEventLogWarning
+
+EVENT alertSystemEventLogFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2377 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertSystemEventLogFailure
+
+EVENT alertSoftwareConfigurationWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2338 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertSoftwareConfigurationWarning
+
+EVENT alertSoftwareConfigurationFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2337 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertSoftwareConfigurationFailure
+
+EVENT alertTemperatureProbeWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2162 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertTemperatureProbeWarning
+
+EVENT alertTemperatureProbeFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2161 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertTemperatureProbeFailure
+
+EVENT alertTemperatureStatisticsWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2522 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertTemperatureStatisticsWarning
+
+EVENT alertTemperatureStatisticsFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2521 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertTemperatureStatisticsFailure
+
+EVENT alertvFlashMediaDeviceWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2506 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertvFlashMediaDeviceWarning
+
+EVENT alertvFlashMediaDeviceFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2505 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertvFlashMediaDeviceFailure
+
+EVENT alertVoltageProbeWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2170 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertVoltageProbeWarning
+
+EVENT alertVoltageProbeFailure .1.3.6.1.4.1.674.10892.5.3.2.1.0.2169 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertVoltageProbeFailure
+
+EVENT alertSystemPerformanceWarning .1.3.6.1.4.1.674.10892.5.3.2.1.0.2650 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertSystemPerformanceWarning
+
+EVENT alertStorageBatteryWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4274 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStorageBatteryWarning
+
+EVENT alertStorageBatteryFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4273 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStorageBatteryFailure
+
+EVENT alertStorageControllerWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4330 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStorageControllerWarning
+
+EVENT alertStorageControllerFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4329 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStorageControllerFailure
+
+EVENT alertStorageEnclosureWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4338 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStorageEnclosureWarning
+
+EVENT alertStorageEnclosureFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4337 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStorageEnclosureFailure
+
+EVENT alertStorageFanWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4202 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStorageFanWarning
+
+EVENT alertStorageFanFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4201 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStorageFanFailure
+
+EVENT alertStoragePhysicalDiskWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4346 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStoragePhysicalDiskWarning
+
+EVENT alertStoragePhysicalDiskFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4345 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStoragePhysicalDiskFailure
+
+EVENT alertStoragePowerSupplyWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4234 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStoragePowerSupplyWarning
+
+EVENT alertStoragePowerSupplyFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4233 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStoragePowerSupplyFailure
+
+EVENT alertStorageSecurityWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4434 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStorageSecurityWarning
+
+EVENT alertStorageSecurityFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4433 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStorageSecurityFailure
+
+EVENT alertStorageManagementWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4178 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStorageManagementWarning
+
+EVENT alertStorageManagementFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4177 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStorageManagementFailure
+
+EVENT alertStorageTemperatureProbeWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4210 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStorageTemperatureProbeWarning
+
+EVENT alertStorageTemperatureProbeFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4209 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStorageTemperatureProbeFailure
+
+EVENT alertStorageVirtualDiskWarning .1.3.6.1.4.1.674.10892.5.3.2.2.0.4354 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertStorageVirtualDiskWarning
+
+EVENT alertStorageVirtualDiskFailure .1.3.6.1.4.1.674.10892.5.3.2.2.0.4353 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertStorageVirtualDiskFailure
+
+EVENT alertSoftwareChangeUpdateWarning .1.3.6.1.4.1.674.10892.5.3.2.3.0.6314 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertSoftwareChangeUpdateWarning
+
+EVENT alertCMCAuditWarning .1.3.6.1.4.1.674.10892.5.3.2.4.0.8690 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertCMCAuditWarning
+
+EVENT alertCMCAuditFailure .1.3.6.1.4.1.674.10892.5.3.2.4.0.8689 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertCMCAuditFailure
+
+EVENT alertDebugWarning .1.3.6.1.4.1.674.10892.5.3.2.4.0.8594 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertDebugWarning
+
+EVENT alertLicenseWarning .1.3.6.1.4.1.674.10892.5.3.2.4.0.8514 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertLicenseWarning
+
+EVENT alertLicenseFailure .1.3.6.1.4.1.674.10892.5.3.2.4.0.8513 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertLicenseFailure
+
+EVENT alertPCIDeviceAuditWarning .1.3.6.1.4.1.674.10892.5.3.2.4.0.8562 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertPCIDeviceAuditWarning
+
+EVENT alertPowerSupplyAuditWarning .1.3.6.1.4.1.674.10892.5.3.2.4.0.8330 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertPowerSupplyAuditWarning
+
+EVENT alertPowerSupplyAuditFailure .1.3.6.1.4.1.674.10892.5.3.2.4.0.8329 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertPowerSupplyAuditFailure
+
+EVENT alertPowerUsageAuditWarning .1.3.6.1.4.1.674.10892.5.3.2.4.0.8418 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertPowerUsageAuditWarning
+
+EVENT alertPowerUsageAuditFailure .1.3.6.1.4.1.674.10892.5.3.2.4.0.8417 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertPowerUsageAuditFailure
+
+EVENT alertUserTrackingWarning .1.3.6.1.4.1.674.10892.5.3.2.4.0.8490 "Status Events" alertUserTrackingWarning  #MINOR
+FORMAT ZBXTRAP $aA $ar alertUserTrackingWarning
+
+EVENT alertNetworkConfigurationWarning .1.3.6.1.4.1.674.10892.5.3.2.5.0.10770 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertNetworkConfigurationWarning
+
+EVENT alertSecurityConfigurationWarning .1.3.6.1.4.1.674.10892.5.3.2.5.0.10578 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertSecurityConfigurationWarning
+
+EVENT alertSWCConfigurationWarning .1.3.6.1.4.1.674.10892.5.3.2.5.0.10530 "Status Events" #MINOR
+FORMAT ZBXTRAP $aA $ar alertSWCConfigurationWarning
+
+EVENT alertSWCConfigurationFailure .1.3.6.1.4.1.674.10892.5.3.2.5.0.10529 "Status Events" #CRITICAL
+FORMAT ZBXTRAP $aA $ar alertSWCConfigurationFailure
+
+EVENT alertTestTrapEvent .1.3.6.1.4.1.674.10892.5.3.2.5.0.10395 "Status Events" alertTestTrapEvent ##MINOR
+FORMAT ZBXTRAP $aA $ar alertTestTrapEvent
